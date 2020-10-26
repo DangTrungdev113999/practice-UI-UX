@@ -1,0 +1,24 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+  &__thumb {
+    margin-right: 170px;
+  }
+  &__content {
+    flex: 1;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    @include flex-center;
+    margin-top: 2rem;
+    img {
+      margin-right: 1rem;
+    }
+    div {
+      flex: 1;
+    }
+  }
+}

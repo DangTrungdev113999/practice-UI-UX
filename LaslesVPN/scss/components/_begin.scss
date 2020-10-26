@@ -1,0 +1,10 @@
+.begin {
+  display: flex;
+  &__content {
+    flex: 1;
+  }
+
+  &__img-box {
+    flex: 1;
+  }
+}

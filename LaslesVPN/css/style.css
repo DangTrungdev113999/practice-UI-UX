@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.u-text-center {
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  content: "";
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+
+.heading-primary {
+  font-size: 5rem;
+  line-height: 7rem;
+  font-weight: 500;
+  color: #0b132a;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  line-height: 3rem;
+  font-weight: 500;
+  color: #0b132a;
+}
+
+.description {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: #4f5665;
+}
+
+.begin {
+  display: flex;
+}
+.begin__content {
+  flex: 1;
+}
+.begin__img-box {
+  flex: 1;
+}
+
+.btn--primary {
+  display: inline-block;
+  padding: 1.75rem 7.75rem;
+  background-color: #fff;
+  color: #f53838;
+  border: 1px solid #f53838;
+  border-radius: 1.8rem;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.btn--primary:hover {
+  background-color: #f53838;
+  color: #fff;
+  box-shadow: 0px 15px 40px rgba(245, 56, 56, 0.35);
+}
+.btn--secondary {
+  display: inline-block;
+  padding: 1.3rem 6.3rem;
+  background-color: #fff;
+  color: #f53838;
+  border: 1px solid #f53838;
+  border-radius: 5rem;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.btn--secondary:hover {
+  background-color: #f53838;
+  color: #fff;
+  box-shadow: 0px 15px 40px rgba(245, 56, 56, 0.35);
+}
+
+.statistical {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding: 3.7rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 100px -60px rgba(0, 0, 0, 0.5);
+}
+.statistical__section {
+  flex: 1;
+  display: flex;
+  flex-direction: "row";
+  justify-content: center;
+  align-items: center;
+}
+.statistical__section:not(:last-child) {
+  border-right: 2px solid #eeeff2;
+}
+.statistical__img {
+  width: 5.5rem;
+  margin-right: 3.65rem;
+}
+.statistical__text--strong {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: bold;
+  color: #0b132a;
+}
+.statistical__text--gray {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4f5665;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+.features__thumb {
+  margin-right: 170px;
+}
+.features__content {
+  flex: 1;
+}
+.features__item {
+  display: flex;
+  flex-direction: "row";
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.features__item img {
+  margin-right: 1rem;
+}
+.features__item div {
+  flex: 1;
+}
+
+.plan-wrapper {
+  display: flex;
+  justify-content: space-around;
+  height: 76rem;
+}
+
+.plan-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7.6rem;
+  background: #ffffff;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+}
+.plan-box__name {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3rem;
+  color: #0b132a;
+}
+.plan-box__list {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.plan-box__list__item {
+  display: flex;
+  flex-direction: "row";
+  justify-content: center;
+  align-items: center;
+}
+.plan-box__list__item:not(:first-child) {
+  margin-top: 1rem;
+}
+.plan-box__list__item img {
+  margin-right: 2rem;
+}
+.plan-box__list__item span {
+  flex: 1;
+  font-size: 1.4rem;
+  font-weight: 3rem;
+  color: #4f5665;
+}
+.plan-box__tail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.plan-box__price {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.plan-box__price--strong {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+.plan-box__price--gray {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+.plan-box:hover {
+  border-color: #f53838;
+}
+
+.row {
+  margin: 0 auto;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row [class^=col-] {
+  float: left;
+}
+.row [class^=col-]:not(:last-child) {
+  margin-right: 6rem;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 *6rem) / 3);
+}
+.row .col-2-of-3 {
+  width: calc( 2 * ((100% - 2 *6rem) / 3) + 6rem );
+}
+.row .col-1-of-4 {
+  width: calc((100% - 3 *6rem) / 4);
+}
+.row .col-2-of-4 {
+  width: calc( 2 * ((100% - 3 *6rem) / 4) + 6rem );
+}
+.row .col-3-of-4 {
+  width: calc( 3 * ((100% - 3 *6rem) / 4) + 2 *6rem );
+}
+
+.header {
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.header__logo-box {
+  display: flex;
+  flex-direction: "row";
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.header__logo {
+  width: 3.5rem;
+  margin-right: 1rem;
+}
+.header__brand {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+}
+.header .nav-bar {
+  display: flex;
+}
+.header .nav-item {
+  list-style: none;
+  margin: 0 2rem;
+}
+.header .nav-item__link {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #4f5665;
+  transition: color 0.3s ease-in-out;
+}
+.header .nav-item__link:hover {
+  color: #f53838;
+}
+.header__authen {
+  display: flex;
+  flex-direction: "row";
+  justify-content: center;
+  align-items: center;
+}
+.header__authen--login {
+  text-decoration: none;
+  color: #0b132a;
+  font-weight: 500;
+  margin-right: 2rem;
+}
+.header__authen--register {
+  padding: 1.3rem 4.5rem;
+  border: 1px solid #f53838;
+  border-radius: 5rem;
+  color: #f53838;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.header__authen--register:hover {
+  background-color: #f53838;
+  color: #fff;
+  box-shadow: 0px 15px 40px rgba(245, 56, 56, 0.35);
+}
+
+.intro-section {
+  max-width: 120rem;
+  margin: 10rem auto 0;
+}
+
+.features-section {
+  max-width: 110rem;
+  margin: 10rem auto 10rem;
+}
+
+.plan-section {
+  background-color: #f6f6f6;
+  padding: 80px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+.btn {
+  &--primary {
+    display: inline-block;
+    padding: 1.75rem 7.75rem;
+    background-color: $color-white;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: 1.8rem;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+      box-shadow: 0px 15px 40px rgba(245, 56, 56, 0.35);
+    }
+  }
+
+  &--secondary {
+    display: inline-block;
+    padding: 1.3rem 6.3rem;
+    background-color: $color-white;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: 5rem;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+      box-shadow: 0px 15px 40px rgba(245, 56, 56, 0.35);
+    }
+  }
+}
