@@ -1,6 +1,8 @@
 .footer {
   display: flex;
-  padding: 6rem 15rem;
+  padding: 20rem 15rem;
+  max-width: 120rem;
+  margin: 0 auto;
   background: #f8f8f8;
   &__info {
     flex: 3;

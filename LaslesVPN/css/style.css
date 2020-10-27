@@ -332,7 +332,7 @@ body {
   align-items: center;
   padding: 5rem 7rem;
   position: relative;
-  top: -15rem;
+  bottom: -15rem;
   margin: 0 auto;
   background: #ffffff;
   border-radius: 10px;
@@ -455,7 +455,9 @@ body {
 
 .footer {
   display: flex;
-  padding: 6rem 15rem;
+  padding: 20rem 15rem;
+  max-width: 120rem;
+  margin: 0 auto;
   background: #f8f8f8;
 }
 .footer__info {
@@ -519,13 +521,16 @@ body {
 
 .plan-section {
   margin: 0 auto;
+  max-width: 120rem;
   padding: 80px 0;
   background-color: #f6f6f6;
 }
 
 .network-section {
-  background-color: #f6f6f6;
+  max-width: 120rem;
+  margin: 0 auto;
   padding: 80px 0 0;
+  background-color: #fff;
 }
 .network-section__title {
   width: 55.5rem;
@@ -539,8 +544,10 @@ body {
 }
 
 .evaluate-section {
-  background-color: #f6f6f6;
-  padding: 80px 0 250px;
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 80px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
