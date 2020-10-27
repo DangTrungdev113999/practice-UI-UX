@@ -1,0 +1,105 @@
+.evaluate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    max-width: 55.5rem;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    padding: 3rem;
+    width: 40rem;
+    border: 2px solid #dddddd;
+    box-sizing: border-box;
+    border-radius: 10px;
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin-right: 2rem;
+      }
+    }
+
+    &__info {
+      div {
+        &:first-child {
+          font-size: 1.6rem;
+          color: $color-black;
+        }
+        &:last-child {
+          font-size: 1.4rem;
+          color: $color-gray;
+        }
+      }
+    }
+
+    &__star {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      img {
+        margin-bottom: 0.5rem;
+      }
+      span {
+        margin-right: 1rem;
+      }
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      color: #0b132a;
+    }
+  }
+
+  &__tail {
+    width: 100%;
+    padding: 0 15rem;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__dots {
+    flex: 1;
+    display: flex;
+  }
+
+  &__dot {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1.5rem;
+    border-radius: 0.75rem;
+    background: #dde0e4;
+  }
+  &__arrow-wrapper {
+    display: flex;
+  }
+  &__arrow {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &--left {
+      border: 1px solid $color-primary;
+      margin-right: 2rem;
+    }
+    &--right {
+      background: $color-primary;
+    }
+  }
+}

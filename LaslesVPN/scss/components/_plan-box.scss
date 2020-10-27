@@ -1,6 +1,8 @@
 .plan-wrapper {
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  max-width: 110rem;
   height: 76rem;
 }
 
@@ -8,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 7.6rem;
+  padding: 6rem;
   background: #ffffff;
   border: 2px solid #dddddd;
   border-radius: 10px;
@@ -39,7 +41,7 @@
       span {
         flex: 1;
         font-size: 1.4rem;
-        font-weight: 3rem;
+        line-height: 3rem;
         color: $color-gray;
       }
     }

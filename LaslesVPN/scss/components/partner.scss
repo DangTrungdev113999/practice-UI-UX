@@ -1,0 +1,8 @@
+.partner {
+  max-width: 111.5rem;
+  margin: 0 auto;
+  @include flex-center;
+  img {
+    margin-top: 0 !important;
+  }
+}

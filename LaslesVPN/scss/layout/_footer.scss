@@ -1,0 +1,56 @@
+.footer {
+  display: flex;
+  padding: 6rem 15rem;
+  background: #f8f8f8;
+  &__info {
+    flex: 3;
+    &__logo {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 1rem;
+      }
+    }
+    summary {
+      width: 34rem;
+      margin-top: 2rem;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      color: #4f5665;
+    }
+
+    &__social {
+      margin-top: 3rem;
+      img {
+        width: 33.6px;
+      }
+    }
+
+    address {
+      font-size: 1.6rem;
+      line-height: 3rem;
+      text-align: center;
+      color: #afb5c0;
+      text-align: left;
+    }
+  }
+
+  &__list {
+    flex: 1;
+    div {
+      font-size: 16px;
+      line-height: 30px;
+      color: #4f5665;
+      &:first-child {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        color: #0b132a;
+      }
+      &:not(:first-child) {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
