@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.u-text-center {
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  content: "";
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+
+.heading--primary {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6.5rem;
+  line-height: 9.5rem;
+  color: #272d4e;
+}
+
+.description {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #94a2b3;
+}
+
+.hero-section {
+  background: linear-gradient(to top, rgba(229, 239, 255, 0.395510206) 0%, #e5efff 49%);
+  padding-bottom: 20rem;
+}
+.hero-section::before {
+  content: "";
+  background-image: url("../img/image-2.png");
+  z-index: 100;
+}
+
+.hero {
+  max-width: 192rem;
+  margin: 18.6rem auto 0;
+  display: flex;
+}
+.hero__about {
+  flex: 1;
+  margin-left: 10rem;
+}
+.hero__about__text div:first-child {
+  max-width: 51rem;
+}
+.hero__about__text div:last-child {
+  max-width: 60rem;
+  margin-top: 2.9rem;
+}
+.hero__about__action {
+  margin-top: 3rem;
+}
+.hero__about__action span:nth-child(2) {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #94a2b3;
+  margin: 0 0.5rem;
+}
+.hero__about__action span:nth-child(3) {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #299ef3;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.hero__about__action span:nth-child(3):hover {
+  text-decoration: underline;
+}
+.hero__product {
+  flex: 1;
+  display: flex;
+}
+.hero__product__imgs {
+  flex: 2;
+  position: relative;
+}
+.hero__product__imgs img {
+  position: absolute;
+}
+.hero__product__imgs img:first-child {
+  right: -16rem;
+  top: -13rem;
+  z-index: 1;
+}
+.hero__product__imgs img:nth-child(2) {
+  left: -8rem;
+  top: 5rem;
+  z-index: 1;
+}
+.hero__product__imgs img:nth-child(3) {
+  left: 56rem;
+  top: 13rem;
+  z-index: 1;
+}
+.hero__product__imgs img:nth-child(4) {
+  left: 4rem;
+  top: 0rem;
+  border-radius: 20px;
+  z-index: 2;
+}
+.hero__product__imgs img:nth-child(5) {
+  left: -3rem;
+  top: -8rem;
+  border-radius: 20px;
+  z-index: 3;
+}
+.hero__product__imgs img:last-child {
+  left: 9rem;
+  top: 28rem;
+  z-index: 5;
+}
+.hero__product__content {
+  flex: 1;
+  position: relative;
+  right: -3rem;
+  transform: scale(0.8);
+  background: #fff;
+  z-index: 4;
+}
+.hero__product__title {
+  margin-top: 40px;
+}
+.hero__product__title--left {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #7854f7;
+}
+.hero__product__title--right {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #94a2b3;
+}
+.hero__product__name {
+  margin-top: 2rem;
+  font-size: 3rem;
+  line-height: 38px;
+  color: #222222;
+}
+.hero__product__size {
+  display: flex;
+  list-style: none;
+  margin-top: 6rem;
+}
+.hero__product__size li {
+  transition: all 0.3s ease-in-out;
+  background: #f6f6f6;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+}
+.hero__product__size li:hover {
+  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.6);
+  transform: translateY(-4px);
+}
+.hero__product__size li:not(:last-child) {
+  margin-left: 1rem;
+}
+.hero__product__price-wrapper {
+  display: flex;
+  margin: 2.5rem 0;
+}
+.hero__product__price--new {
+  font-weight: 500;
+  font-size: 2.3rem;
+  line-height: 2.8rem;
+  color: #7854f7;
+}
+.hero__product__price--old {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  text-decoration-line: line-through;
+  color: #868686;
+}
+.hero__product__amount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2.7rem;
+  background: #f6f6f6;
+  border-radius: 0.5rem;
+}
+.hero__product__amount div {
+  padding: 1.3rem;
+}
+.hero__product__amount div:first-child, .hero__product__amount div:last-child {
+  display: block;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.hero__product__amount div:first-child:hover, .hero__product__amount div:last-child:hover {
+  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.6);
+  transform: translateY(-4px);
+}
+.hero__product__action {
+  padding: 1.6rem 6.6rem;
+  background: #7854f7;
+  border-radius: 4.99174px;
+  display: flex;
+  flex-direction: "row";
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.6);
+  transform: translateY(-4px);
+}
+.btn--primary {
+  padding: 2rem 6rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-align: center;
+  background: #5f37ef;
+  border-radius: 60px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  max-width: 181rem;
+  margin: auto 0;
+  padding: 3.7rem 5.5rem;
+}
+.header .logo {
+  width: 16.9rem;
+  cursor: pointer;
+}
+.header .nav-section {
+  margin-left: 14.4rem;
+}
+.header .nav-section .nav {
+  display: flex;
+  margin: 0 -1.9rem;
+}
+.header .nav-section .nav__item {
+  margin: 0 1.9rem;
+  list-style: none;
+}
+.header .nav-section .nav__item--link {
+  color: #272d4e;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.header .nav-section .nav__item--link:hover {
+  color: #7854f7;
+}
+.header .auth {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header .auth .login {
+  margin-right: 5.2rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.header .auth .login:hover {
+  color: #7854f7;
+}
+.header .auth .get-started {
+  margin-right: 3rem;
+  padding: 1.3rem 1.4rem;
+  background: #7854f7;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: "row";
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.header .auth .get-started:hover {
+  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.6);
+  transform: translateY(-4px);
+}
+.header .auth .search {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+.btn {
+  color: #ffffff;
+  @include shadow-effect;
+  cursor: pointer;
+  &--primary {
+    padding: 2rem 6rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    text-align: center;
+    background: $color-secondary;
+    border-radius: 60px;
+  }
+}

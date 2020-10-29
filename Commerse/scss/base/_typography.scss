@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+
+.heading--primary {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6.5rem;
+  line-height: 9.5rem;
+  color: $color-text-primary;
+}
+
+.description {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: $color-text-gray;
+}

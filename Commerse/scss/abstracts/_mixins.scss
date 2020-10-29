@@ -1,0 +1,32 @@
+@mixin flex-center($direaction: "row") {
+  display: flex;
+  flex-direction: $direaction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-around($direaction: "row", $alignItem: "flex-start") {
+  display: flex;
+  flex-direction: $direaction;
+  justify-content: space-around;
+  @if $alignItem {
+    align-items: $alignItem;
+  } @else {
+    align-items: flex-start;
+  }
+}
+
+@mixin flex-bettwen($direaction: "row", $alignItem: "flex-start") {
+  display: flex;
+  flex-direction: $direaction;
+  justify-content: space-between;
+  align-items: $alignItem;
+}
+
+@mixin shadow-effect {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.6);
+    transform: translateY(-4px);
+  }
+}

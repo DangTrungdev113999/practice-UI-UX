@@ -1,0 +1,13 @@
+.hero-section {
+  background: linear-gradient(
+    to top,
+    rgba(229, 239, 255, 0.3955102060355392) 0%,
+    rgba(229, 239, 255, 1) 49%
+  );
+  &::before {
+    content: "";
+    background-image: url("../img/image-2.png");
+    z-index: 100;
+  }
+  padding-bottom: 20rem;
+}

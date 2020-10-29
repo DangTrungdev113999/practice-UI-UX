@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  align-items: center;
+  max-width: 181rem;
+  margin: auto 0;
+  padding: 3.7rem 5.5rem;
+
+  .logo {
+    width: 16.9rem;
+    cursor: pointer;
+  }
+
+  .nav-section {
+    margin-left: 14.4rem;
+
+    .nav {
+      display: flex;
+      margin: 0 -1.9rem;
+      &__item {
+        margin: 0 1.9rem;
+        list-style: none;
+        &--link {
+          color: $color-text-primary;
+          text-decoration: none;
+          font-size: 1.8rem;
+          line-height: 2.1rem;
+          font-weight: 500;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  .auth {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .login {
+      margin-right: 5.2rem;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    .get-started {
+      margin-right: 3rem;
+      padding: 1.3rem 1.4rem;
+      background: $color-primary;
+      border-radius: 5px;
+      @include flex-center;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      color: #ffffff;
+      cursor: pointer;
+      @include shadow-effect;
+    }
+
+    .search {
+      cursor: pointer;
+    }
+  }
+}
