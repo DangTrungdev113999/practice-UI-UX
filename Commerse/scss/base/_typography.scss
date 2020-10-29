@@ -9,9 +9,35 @@ body {
 .heading--primary {
   font-style: normal;
   font-weight: bold;
-  font-size: 6.5rem;
+  font-size: 8.5rem;
   line-height: 9.5rem;
   color: $color-text-primary;
+}
+
+.heading--secondary {
+  font-weight: bold;
+  font-size: 5.5rem;
+  line-height: 7rem;
+  text-align: center;
+  color: $color-text-primary;
+}
+
+.heading--title {
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 7rem;
+  color: $color-text-primary;
+}
+
+.link {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #299ef3;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .description {

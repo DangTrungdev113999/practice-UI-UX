@@ -2,17 +2,17 @@
   display: flex;
   align-items: center;
   max-width: 181rem;
-  margin: auto 0;
+  margin: 0 auto;
   padding: 3.7rem 5.5rem;
-
   .logo {
     width: 16.9rem;
+    z-index: 5;
     cursor: pointer;
   }
 
   .nav-section {
     margin-left: 14.4rem;
-
+    z-index: 5;
     .nav {
       display: flex;
       margin: 0 -1.9rem;
@@ -40,7 +40,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
+    z-index: 5;
     .login {
       margin-right: 5.2rem;
       font-weight: 500;

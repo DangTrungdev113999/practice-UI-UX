@@ -1,0 +1,28 @@
+.marketplace {
+  div {
+    &:first-child {
+      width: 45.7rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__card-wrapper {
+    display: flex;
+    // justify-content: flex-start;
+  }
+
+  &__card {
+    &__img {
+      border-radius: 20px;
+    }
+    &__content {
+      margin-left: 5rem;
+      width: 43rem;
+      div {
+        &:last-child {
+          margin-top: 2.5rem;
+        }
+      }
+    }
+  }
+}
