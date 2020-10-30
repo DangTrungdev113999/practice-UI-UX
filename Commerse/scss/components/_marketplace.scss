@@ -1,5 +1,5 @@
 .marketplace {
-  div {
+  & > div {
     &:first-child {
       width: 45.7rem;
       margin: 0 auto;
@@ -8,17 +8,83 @@
 
   &__card-wrapper {
     display: flex;
-    // justify-content: flex-start;
+    justify-content: space-around;
+    margin-left: 15rem;
   }
 
   &__card {
+    position: relative;
+    &--1 {
+    }
+    &--2 {
+      top: 5rem;
+      left: -5rem;
+    }
+    &--3 {
+      top: 10rem;
+      left: -10rem;
+    }
     &__img {
       border-radius: 20px;
+      cursor: pointer;
+      &--1 {
+        position: absolute;
+        top: 5rem;
+        left: -3rem;
+      }
+      &--2 {
+        position: absolute;
+        top: 8rem;
+        left: -14rem;
+      }
+      &--3 {
+        position: absolute;
+        top: -4rem;
+        left: 5rem;
+      }
+      &--4 {
+        position: absolute;
+        top: 2rem;
+        left: 29rem;
+      }
+      &--5 {
+        position: absolute;
+        top: 12rem;
+        left: 3rem;
+      }
+      &--6 {
+        position: absolute;
+        top: 16rem;
+        left: 25rem;
+      }
+      &--7 {
+        position: absolute;
+        bottom: -2rem;
+        left: -5rem;
+      }
+      &--8 {
+        position: absolute;
+        top: -12rem;
+        right: 4rem;
+      }
+      &--9 {
+        position: absolute;
+        top: -6rem;
+        left: 5rem;
+      }
+      &--10 {
+        position: absolute;
+        bottom: 22rem;
+        left: 32rem;
+      }
     }
     &__content {
       margin-left: 5rem;
       width: 43rem;
       div {
+        &:first-child {
+          cursor: pointer;
+        }
         &:last-child {
           margin-top: 2.5rem;
         }

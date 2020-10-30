@@ -1,0 +1,87 @@
+.develop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  > div {
+    &:first-child {
+      width: 60rem;
+    }
+  }
+  &__content {
+    width: 74rem;
+    height: 31rem;
+    margin-top: 10rem;
+    padding: 5rem;
+    background: #ffffff;
+    box-shadow: 0 1.8rem 5.2rem rgba(215, 228, 249, 0.5);
+    border-radius: 2rem;
+    color: #94a2b3;
+    font-size: 2.67rem;
+    line-height: 3.9rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    &:before,
+    &:after {
+      content: "";
+      background: #fff;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      box-shadow: 0 1.8rem 5.2rem rgba(215, 228, 249, 0.5);
+      position: absolute;
+      z-index: -10;
+    }
+
+    &:before {
+      width: 70rem;
+      height: 3rem;
+      bottom: -3rem;
+      left: 2rem;
+    }
+    &:after {
+      width: 64rem;
+      height: 3rem;
+      bottom: -6rem;
+      left: 6rem;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    &--1 {
+      top: 5rem;
+      left: 29rem;
+    }
+    &--2 {
+      top: 30rem;
+      left: 8rem;
+    }
+    &--3 {
+      top: 63rem;
+      left: 33rem;
+    }
+    &--4 {
+      top: 4rem;
+      right: 33rem;
+    }
+    &--5 {
+      top: 26rem;
+      right: 11rem;
+    }
+    &--6 {
+      top: 65rem;
+      right: 33rem;
+    }
+    &--7 {
+      top: 47rem;
+      left: 49rem;
+    }
+    &--8 {
+      top: 28rem;
+      left: 100rem;
+    }
+  }
+}

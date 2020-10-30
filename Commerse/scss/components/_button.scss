@@ -1,6 +1,6 @@
 .btn {
+  display: inline-block;
   color: #ffffff;
-  @include shadow-effect;
   cursor: pointer;
   &--primary {
     padding: 2.6rem 6.2rem;
@@ -10,5 +10,18 @@
     text-align: center;
     background: $color-secondary;
     border-radius: 60px;
+  }
+  &--secondary {
+    padding: 2.2rem 2.6rem;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    text-align: center;
+    background: #70c217;
+    border-radius: 60px;
+  }
+  &:hover {
+    @include shadow-effect;
   }
 }

@@ -12,6 +12,29 @@
 .marketplace-section {
   max-width: 192rem;
   margin: 0 auto;
+  padding-bottom: 15rem;
   position: relative;
   top: -13rem;
+}
+
+.community-section {
+  max-width: 192rem;
+  margin: 0 auto;
+  padding: 10rem 0;
+  background-image: url("../img/background-2.png");
+  background-repeat: no-repeat;
+}
+
+.develop-section {
+  max-width: 192rem;
+  margin: 0 auto;
+  padding-bottom: 25rem;
+  background: linear-gradient(
+    180deg,
+    rgba(236, 240, 253, 0) 0%,
+    rgba(236, 240, 253, 0.53) 14.32%,
+    #ecf0fd 45.83%,
+    rgba(236, 240, 253, 0.43) 84.33%,
+    rgba(236, 240, 253, 0) 100%
+  );
 }

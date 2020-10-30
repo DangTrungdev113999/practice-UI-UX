@@ -6,7 +6,7 @@
   height: 100%;
   background-image: url("../img/background-1.png");
   background-repeat: no-repeat;
-  background-position-x: 95rem;
+  background-position: top right;
   z-index: 0;
 }
 
@@ -14,14 +14,14 @@
   display: flex;
   max-width: 192rem;
   margin: 18.6rem auto 0;
-  background-image: url("../img/background-1.png");
   background-repeat: no-repeat;
   background-position-x: 95rem;
   &__about {
     flex: 1;
     margin-left: 22rem;
+    z-index: 5;
     &__text {
-      div {
+      & div {
         &:first-child {
           max-width: 75rem;
         }
@@ -33,23 +33,14 @@
     }
 
     &__action {
+      display: block;
       margin-top: 5.1rem;
-      span {
+      & span {
         &:nth-child(2) {
           font-size: 1.8rem;
           line-height: 2.5rem;
           color: $color-text-gray;
           margin: 0 0.5rem;
-        }
-        &:nth-child(3) {
-          font-size: 1.8rem;
-          line-height: 2.5rem;
-          color: $color-text-link;
-          cursor: pointer;
-          transition: all 0.2s ease-in-out;
-          &:hover {
-            text-decoration: underline;
-          }
         }
       }
     }
