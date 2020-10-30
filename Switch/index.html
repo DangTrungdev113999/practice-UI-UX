@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Toggle Animation Effect using HTML CSS JS</title>
+
+    <style>
+      * {
+        transition: all 0.3s ease-in-out;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #214252;
+      }
+
+      .text {
+        color: #f4f4f4;
+        margin-top: 10em;
+        font-size: 40px;
+      }
+
+      .designer {
+        color: #f05454;
+      }
+
+      .developer {
+        color: #b8de6f;
+      }
+
+      .switch {
+        width: 100px;
+        height: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: #e8e8e8;
+        border-radius: 999px;
+      }
+
+      .active {
+        font-size: 100px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .ball {
+        width: 45px;
+        height: 45px;
+        position: relative;
+        left: 4px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: #f05454;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .ball--active {
+        background-color: #b8de6f;
+        transform: translateX(45px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text">
+      Do you want to be <span class="designer active">Designer</span> or
+      <span class="developer">Developer</span>
+    </h1>
+    <div class="switch">
+      <span class="ball"></span>
+    </div>
+
+    <script>
+      const developerText = document.querySelector(".developer");
+      const designerText = document.querySelector(".designer");
+      const ballElm = document.querySelector(".ball");
+      const switchElm = document.querySelector(".switch");
+      switchElm.addEventListener("click", () => {
+        developerText.classList.toggle("active");
+        designerText.classList.toggle("active");
+        ballElm.classList.toggle("ball--active");
+      });
+    </script>
+  </body>
+</html>
