@@ -24,10 +24,12 @@
       & div {
         &:first-child {
           max-width: 75rem;
+          animation: moveInRight 1s ease-out;
         }
         &:last-child {
           max-width: 70rem;
           margin-top: 2.9rem;
+          animation: moveInLeft 1s ease-out;
         }
       }
     }
@@ -35,6 +37,7 @@
     &__action {
       display: block;
       margin-top: 5.1rem;
+      animation: moveInbottom 1s ease-out;
       & span {
         &:nth-child(2) {
           font-size: 1.8rem;

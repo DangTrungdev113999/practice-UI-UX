@@ -1,0 +1,74 @@
+.resurces {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  & > div {
+    &:nth-child(2) {
+      margin-top: 3rem;
+      width: 66rem;
+      text-align: center;
+    }
+  }
+  & > img {
+    &:first-child {
+      margin-top: -2rem;
+      z-index: 5;
+    }
+  }
+
+  &__about {
+    width: 100%;
+    @include flex-center;
+    padding: 7.8rem 0;
+    background: #5f37ef;
+    z-index: 5;
+    & > div {
+      &:first-child {
+        width: 85rem;
+        font-size: 3.6rem;
+        line-height: 5.2rem;
+        color: #ffffff;
+      }
+      &:last-child {
+        border: 2px solid #ffffff;
+        box-sizing: border-box;
+        padding: 2.6rem 4.6rem;
+        margin-left: 10rem;
+        border-radius: 60px;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        text-align: center;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    z-index: -1;
+    &--1 {
+      top: 22rem;
+      left: 14rem;
+    }
+    &--2 {
+      top: 33rem;
+      left: 21rem;
+    }
+    &--3 {
+      top: 16rem;
+      right: 23rem;
+    }
+    &--4 {
+      bottom: 12rem;
+      left: 4rem;
+    }
+    &--5 {
+      bottom: 24rem;
+      right: 11rem;
+    }
+  }
+}

@@ -26,7 +26,7 @@
 - Landing Page design: [Figma](https://www.figma.com/file/bJQnkGgO9MyEEy2Xb5u0Z7/woo-landing?node-id=23%3A74)
 - responsive: không
 - Teck: html, scss
-- result:
+- result: ![result](Resurce/success.png)
 
 ### Decbase:
 

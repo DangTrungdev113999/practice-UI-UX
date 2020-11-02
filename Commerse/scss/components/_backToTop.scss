@@ -1,0 +1,40 @@
+#backToTop {
+  position: fixed;
+  bottom: 5rem;
+  right: -10rem;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: #ffe05d;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  z-index: 1000;
+  span {
+    width: 0.5rem;
+    height: 3rem;
+    background: #f1f6f9;
+    position: relative;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0.4rem;
+      height: 1.5rem;
+      background: #f1f6f9;
+    }
+
+    &::before {
+      top: 0;
+      left: 0.6rem;
+      transform: rotate(-30deg);
+    }
+    &::after {
+      top: 0;
+      right: 0.6rem;
+      transform: rotate(30deg);
+    }
+  }
+}
